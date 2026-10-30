@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pf-019">
+                                <rect key="frame" x="148.5" y="91" width="96" height="96"/>
+                                <color key="backgroundColor" red="0.906" green="0.906" blue="0.973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="cn-043"/>
+                                    <constraint firstAttribute="height" constant="96" id="cn-044"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="48"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-020">
+                                <rect key="frame" x="168" y="117" width="57" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.208" green="0.196" blue="0.627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aigerim Bekova" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-021">
+                                <rect key="frame" x="16" y="203" width="361" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer · Almaty" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-022">
+                                <rect key="frame" x="16" y="238" width="361" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.43" green="0.43" blue="0.45" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-015">
+                                <rect key="frame" x="16" y="281" width="361" height="73"/>
+                                <subviews>
+                                    <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-006">
+                                        <rect key="frame" x="0" y="0" width="119.66666666666667" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-004">
+                                                <rect key="frame" x="39.833333333333336" y="14" width="40" height="26"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-005">
+                                                <rect key="frame" x="29.833333333333336" y="42" width="60" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.43" green="0.43" blue="0.45" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="pf-004" firstAttribute="top" secondItem="pf-006" secondAttribute="top" constant="14" id="cn-001"/>
+                                            <constraint firstItem="pf-004" firstAttribute="centerX" secondItem="pf-006" secondAttribute="centerX" id="cn-002"/>
+                                            <constraint firstItem="pf-005" firstAttribute="top" secondItem="pf-004" secondAttribute="bottom" constant="2" id="cn-003"/>
+                                            <constraint firstItem="pf-005" firstAttribute="centerX" secondItem="pf-006" secondAttribute="centerX" id="cn-004"/>
+                                            <constraint firstItem="pf-006" firstAttribute="bottom" secondItem="pf-005" secondAttribute="bottom" constant="14" id="cn-005"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-007">
+                                        <rect key="frame" x="119.66666666666667" y="16" width="1" height="41"/>
+                                        <subviews/>
+                                        <color key="backgroundColor" red="0.88" green="0.88" blue="0.9" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="cn-006"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-010">
+                                        <rect key="frame" x="120.66666666666667" y="0" width="119.66666666666667" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2K" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-008">
+                                                <rect key="frame" x="39.833333333333336" y="14" width="40" height="26"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-009">
+                                                <rect key="frame" x="29.833333333333336" y="42" width="60" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.43" green="0.43" blue="0.45" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="pf-008" firstAttribute="top" secondItem="pf-010" secondAttribute="top" constant="14" id="cn-007"/>
+                                            <constraint firstItem="pf-008" firstAttribute="centerX" secondItem="pf-010" secondAttribute="centerX" id="cn-008"/>
+                                            <constraint firstItem="pf-009" firstAttribute="top" secondItem="pf-008" secondAttribute="bottom" constant="2" id="cn-009"/>
+                                            <constraint firstItem="pf-009" firstAttribute="centerX" secondItem="pf-010" secondAttribute="centerX" id="cn-010"/>
+                                            <constraint firstItem="pf-010" firstAttribute="bottom" secondItem="pf-009" secondAttribute="bottom" constant="14" id="cn-011"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-011">
+                                        <rect key="frame" x="240.33333333333334" y="16" width="1" height="41"/>
+                                        <subviews/>
+                                        <color key="backgroundColor" red="0.88" green="0.88" blue="0.9" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="cn-012"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-014">
+                                        <rect key="frame" x="241.33333333333334" y="0" width="119.66666666666667" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="312" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-012">
+                                                <rect key="frame" x="39.833333333333336" y="14" width="40" height="26"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-013">
+                                                <rect key="frame" x="29.833333333333336" y="42" width="60" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.43" green="0.43" blue="0.45" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="pf-012" firstAttribute="top" secondItem="pf-014" secondAttribute="top" constant="14" id="cn-013"/>
+                                            <constraint firstItem="pf-012" firstAttribute="centerX" secondItem="pf-014" secondAttribute="centerX" id="cn-014"/>
+                                            <constraint firstItem="pf-013" firstAttribute="top" secondItem="pf-012" secondAttribute="bottom" constant="2" id="cn-015"/>
+                                            <constraint firstItem="pf-013" firstAttribute="centerX" secondItem="pf-014" secondAttribute="centerX" id="cn-016"/>
+                                            <constraint firstItem="pf-014" firstAttribute="bottom" secondItem="pf-013" secondAttribute="bottom" constant="14" id="cn-017"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pf-006" firstAttribute="leading" secondItem="pf-015" secondAttribute="leading" id="cn-018"/>
+                                    <constraint firstItem="pf-006" firstAttribute="top" secondItem="pf-015" secondAttribute="top" id="cn-019"/>
+                                    <constraint firstItem="pf-006" firstAttribute="bottom" secondItem="pf-015" secondAttribute="bottom" id="cn-020"/>
+                                    <constraint firstItem="pf-007" firstAttribute="leading" secondItem="pf-006" secondAttribute="trailing" id="cn-021"/>
+                                    <constraint firstItem="pf-007" firstAttribute="top" secondItem="pf-015" secondAttribute="top" constant="16" id="cn-022"/>
+                                    <constraint firstItem="pf-015" firstAttribute="bottom" secondItem="pf-007" secondAttribute="bottom" constant="16" id="cn-023"/>
+                                    <constraint firstItem="pf-010" firstAttribute="leading" secondItem="pf-007" secondAttribute="trailing" id="cn-024"/>
+                                    <constraint firstItem="pf-010" firstAttribute="top" secondItem="pf-015" secondAttribute="top" id="cn-025"/>
+                                    <constraint firstItem="pf-010" firstAttribute="bottom" secondItem="pf-015" secondAttribute="bottom" id="cn-026"/>
+                                    <constraint firstItem="pf-011" firstAttribute="leading" secondItem="pf-010" secondAttribute="trailing" id="cn-027"/>
+                                    <constraint firstItem="pf-011" firstAttribute="top" secondItem="pf-015" secondAttribute="top" constant="16" id="cn-028"/>
+                                    <constraint firstItem="pf-015" firstAttribute="bottom" secondItem="pf-011" secondAttribute="bottom" constant="16" id="cn-029"/>
+                                    <constraint firstItem="pf-014" firstAttribute="leading" secondItem="pf-011" secondAttribute="trailing" id="cn-030"/>
+                                    <constraint firstItem="pf-014" firstAttribute="top" secondItem="pf-015" secondAttribute="top" id="cn-031"/>
+                                    <constraint firstItem="pf-014" firstAttribute="bottom" secondItem="pf-015" secondAttribute="bottom" id="cn-032"/>
+                                    <constraint firstItem="pf-015" firstAttribute="trailing" secondItem="pf-014" secondAttribute="trailing" id="cn-033"/>
+                                    <constraint firstItem="pf-010" firstAttribute="width" secondItem="pf-006" secondAttribute="width" id="cn-034"/>
+                                    <constraint firstItem="pf-014" firstAttribute="width" secondItem="pf-006" secondAttribute="width" id="cn-035"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf-023">
+                                <rect key="frame" x="16" y="370" width="174.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="backgroundColor" red="0.208" green="0.196" blue="0.627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Follow">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cn-045"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf-024">
+                                <rect key="frame" x="202.5" y="370" width="174.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="backgroundColor" red="0.906" green="0.906" blue="0.973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Message">
+                                    <color key="titleColor" red="0.208" green="0.196" blue="0.627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cn-046"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pf-018">
+                                <rect key="frame" x="16" y="442" width="361" height="113"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-016">
+                                        <rect key="frame" x="16" y="16" width="329" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        <color key="textColor" red="0.43" green="0.43" blue="0.45" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building banking apps in Swift. I like clean architecture, coffee and long walks in the mountains around Almaty." textAlignment="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf-017">
+                                        <rect key="frame" x="16" y="40" width="329" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pf-016" firstAttribute="top" secondItem="pf-018" secondAttribute="top" constant="16" id="cn-036"/>
+                                    <constraint firstItem="pf-016" firstAttribute="leading" secondItem="pf-018" secondAttribute="leading" constant="16" id="cn-037"/>
+                                    <constraint firstItem="pf-018" firstAttribute="trailing" secondItem="pf-016" secondAttribute="trailing" constant="16" id="cn-038"/>
+                                    <constraint firstItem="pf-017" firstAttribute="top" secondItem="pf-016" secondAttribute="bottom" constant="8" id="cn-039"/>
+                                    <constraint firstItem="pf-017" firstAttribute="leading" secondItem="pf-018" secondAttribute="leading" constant="16" id="cn-040"/>
+                                    <constraint firstItem="pf-018" firstAttribute="trailing" secondItem="pf-017" secondAttribute="trailing" constant="16" id="cn-041"/>
+                                    <constraint firstItem="pf-018" firstAttribute="bottom" secondItem="pf-017" secondAttribute="bottom" constant="16" id="cn-042"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.949" green="0.949" blue="0.969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pf-019" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cn-047"/>
+                            <constraint firstItem="pf-019" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="cn-048"/>
+                            <constraint firstItem="pf-020" firstAttribute="centerX" secondItem="pf-019" secondAttribute="centerX" id="cn-049"/>
+                            <constraint firstItem="pf-020" firstAttribute="centerY" secondItem="pf-019" secondAttribute="centerY" id="cn-050"/>
+                            <constraint firstItem="pf-021" firstAttribute="top" secondItem="pf-019" secondAttribute="bottom" constant="16" id="cn-051"/>
+                            <constraint firstItem="pf-021" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn-052"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf-021" secondAttribute="trailing" constant="16" id="cn-053"/>
+                            <constraint firstItem="pf-022" firstAttribute="top" secondItem="pf-021" secondAttribute="bottom" constant="6" id="cn-054"/>
+                            <constraint firstItem="pf-022" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn-055"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf-022" secondAttribute="trailing" constant="16" id="cn-056"/>
+                            <constraint firstItem="pf-015" firstAttribute="top" secondItem="pf-022" secondAttribute="bottom" constant="24" id="cn-057"/>
+                            <constraint firstItem="pf-015" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn-058"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf-015" secondAttribute="trailing" constant="16" id="cn-059"/>
+                            <constraint firstItem="pf-023" firstAttribute="top" secondItem="pf-015" secondAttribute="bottom" constant="16" id="cn-060"/>
+                            <constraint firstItem="pf-023" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn-061"/>
+                            <constraint firstItem="pf-024" firstAttribute="top" secondItem="pf-015" secondAttribute="bottom" constant="16" id="cn-062"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf-024" secondAttribute="trailing" constant="16" id="cn-063"/>
+                            <constraint firstItem="pf-024" firstAttribute="leading" secondItem="pf-023" secondAttribute="trailing" constant="12" id="cn-064"/>
+                            <constraint firstItem="pf-024" firstAttribute="width" secondItem="pf-023" secondAttribute="width" id="cn-065"/>
+                            <constraint firstItem="pf-018" firstAttribute="top" secondItem="pf-023" secondAttribute="bottom" constant="24" id="cn-066"/>
+                            <constraint firstItem="pf-018" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn-067"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf-018" secondAttribute="trailing" constant="16" id="cn-068"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutTextLabel" destination="pf-017" id="ot-001"/>
+                        <outlet property="avatarImageView" destination="pf-019" id="ot-002"/>
+                        <outlet property="followersCountLabel" destination="pf-008" id="ot-003"/>
+                        <outlet property="followingCountLabel" destination="pf-012" id="ot-004"/>
+                        <outlet property="initialsLabel" destination="pf-020" id="ot-005"/>
+                        <outlet property="nameLabel" destination="pf-021" id="ot-006"/>
+                        <outlet property="postsCountLabel" destination="pf-004" id="ot-007"/>
+                        <outlet property="subtitleLabel" destination="pf-022" id="ot-008"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NAV">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="sc-nav">
+            <objects>
+                <navigationController id="NAV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" prefersLargeTitles="YES" id="NBAR">
+                        <rect key="frame" x="0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1.0" green="0.239" blue="0.506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LIST" kind="relationship" relationship="rootViewController" id="seg-root"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr-nav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="0"/>
+        </scene>
+        <scene sceneID="sc-list">
+            <objects>
+                <viewController id="LIST" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LVIEW">
+                        <rect key="frame" x="0" y="0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_list" translatesAutoresizingMaskIntoConstraints="NO" id="LBG">
+                                <rect key="frame" x="0" y="0" width="393" height="852"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsVerticalScrollIndicator="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TABLE">
+                                <rect key="frame" x="0" y="155" width="393" height="663"/>
+                                <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavoriteCell" id="CELL" customClass="FavoriteCell" customModuleProvider="target">
+                                        <rect key="frame" x="0" y="155" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CELL" id="CCONTENT">
+                                            <rect key="frame" x="0" y="0" width="393" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CARD">
+                                                    <rect key="frame" x="16" y="6" width="361" height="108"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLOW">
+                                                            <rect key="frame" x="190" y="-40" width="110" height="110"/>
+                                                            <color key="backgroundColor" red="1.0" green="0.239" blue="0.506" alpha="0.28" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="110" id="cn-001"/>
+                                                                <constraint firstAttribute="height" constant="110" id="cn-002"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="55"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAR">
+                                                            <rect key="frame" x="0" y="35" width="5" height="38"/>
+                                                            <color key="backgroundColor" red="1.0" green="0.239" blue="0.506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="5" id="cn-003"/>
+                                                                <constraint firstAttribute="height" constant="38" id="cn-004"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Мартин Иден" translatesAutoresizingMaskIntoConstraints="NO" id="CPOSTER">
+                                                            <rect key="frame" x="16" y="12" width="56" height="84"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="56" id="cn-005"/>
+                                                                <constraint firstAttribute="height" constant="84" id="cn-006"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мартин Иден" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTITLE">
+                                                            <rect key="frame" x="86" y="41" width="233" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CHEV">
+                                                            <rect key="frame" x="320" y="45" width="12" height="18"/>
+                                                            <color key="tintColor" red="1.0" green="0.239" blue="0.506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="12" id="cn-007"/>
+                                                                <constraint firstAttribute="height" constant="18" id="cn-008"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="0.08" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="GLOW" firstAttribute="trailing" secondItem="CARD" secondAttribute="trailing" constant="30" id="cn-009"/>
+                                                        <constraint firstItem="GLOW" firstAttribute="top" secondItem="CARD" secondAttribute="top" constant="-40" id="cn-010"/>
+                                                        <constraint firstItem="BAR" firstAttribute="leading" secondItem="CARD" secondAttribute="leading" id="cn-011"/>
+                                                        <constraint firstItem="BAR" firstAttribute="centerY" secondItem="CARD" secondAttribute="centerY" id="cn-012"/>
+                                                        <constraint firstItem="CPOSTER" firstAttribute="leading" secondItem="CARD" secondAttribute="leading" constant="16" id="cn-013"/>
+                                                        <constraint firstItem="CPOSTER" firstAttribute="top" secondItem="CARD" secondAttribute="top" constant="12" id="cn-014"/>
+                                                        <constraint firstItem="CARD" firstAttribute="bottom" secondItem="CPOSTER" secondAttribute="bottom" constant="12" id="cn-015"/>
+                                                        <constraint firstItem="CARD" firstAttribute="trailing" secondItem="CHEV" secondAttribute="trailing" constant="20" id="cn-016"/>
+                                                        <constraint firstItem="CHEV" firstAttribute="centerY" secondItem="CARD" secondAttribute="centerY" id="cn-017"/>
+                                                        <constraint firstItem="CTITLE" firstAttribute="leading" secondItem="CPOSTER" secondAttribute="trailing" constant="14" id="cn-018"/>
+                                                        <constraint firstItem="CHEV" firstAttribute="leading" secondItem="CTITLE" secondAttribute="trailing" constant="10" id="cn-019"/>
+                                                        <constraint firstItem="CTITLE" firstAttribute="centerY" secondItem="CPOSTER" secondAttribute="centerY" id="cn-020"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="22"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CARD" firstAttribute="leading" secondItem="CCONTENT" secondAttribute="leading" constant="16" id="cn-021"/>
+                                                <constraint firstItem="CCONTENT" firstAttribute="trailing" secondItem="CARD" secondAttribute="trailing" constant="16" id="cn-022"/>
+                                                <constraint firstItem="CARD" firstAttribute="top" secondItem="CCONTENT" secondAttribute="top" constant="6" id="cn-023"/>
+                                                <constraint firstItem="CCONTENT" firstAttribute="bottom" secondItem="CARD" secondAttribute="bottom" constant="6" id="cn-024"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accentBarView" destination="BAR" id="ot-c1"/>
+                                            <outlet property="chevronImageView" destination="CHEV" id="ot-c2"/>
+                                            <outlet property="glowView" destination="GLOW" id="ot-c3"/>
+                                            <outlet property="posterImageView" destination="CPOSTER" id="ot-c4"/>
+                                            <outlet property="titleLabel" destination="CTITLE" id="ot-c5"/>
+                                            <segue destination="DETAIL" kind="show" identifier="showDetail" id="seg-detail"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LSAFE"/>
+                        <color key="backgroundColor" red="0.039" green="0.039" blue="0.122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LBG" firstAttribute="top" secondItem="LVIEW" secondAttribute="top" id="cn-025"/>
+                            <constraint firstItem="LBG" firstAttribute="leading" secondItem="LVIEW" secondAttribute="leading" id="cn-026"/>
+                            <constraint firstItem="LVIEW" firstAttribute="trailing" secondItem="LBG" secondAttribute="trailing" id="cn-027"/>
+                            <constraint firstItem="LVIEW" firstAttribute="bottom" secondItem="LBG" secondAttribute="bottom" id="cn-028"/>
+                            <constraint firstItem="TABLE" firstAttribute="top" secondItem="LSAFE" secondAttribute="top" id="cn-029"/>
+                            <constraint firstItem="TABLE" firstAttribute="leading" secondItem="LSAFE" secondAttribute="leading" id="cn-030"/>
+                            <constraint firstItem="LSAFE" firstAttribute="trailing" secondItem="TABLE" secondAttribute="trailing" id="cn-031"/>
+                            <constraint firstItem="LSAFE" firstAttribute="bottom" secondItem="TABLE" secondAttribute="bottom" id="cn-032"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мои книги" id="LNAV"/>
+                    <connections>
+                        <outlet property="tableView" destination="TABLE" id="ot-l1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr-list" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0" y="0"/>
+        </scene>
+        <scene sceneID="sc-detail">
+            <objects>
+                <viewController id="DETAIL" customClass="DetailViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DVIEW">
+                        <rect key="frame" x="0" y="0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_detail" translatesAutoresizingMaskIntoConstraints="NO" id="DBG">
+                                <rect key="frame" x="0" y="0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DSTACK">
+                                <rect key="frame" x="16" y="115" width="361" height="542"/>
+                                <subviews>
+                                    <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HERO">
+                                        <rect key="frame" x="0" y="0" width="361" height="210"/>
+                                        <subviews>
+                                            <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HALO">
+                                                <rect key="frame" x="80" y="5" width="200" height="200"/>
+                                                <color key="backgroundColor" red="1.0" green="0.239" blue="0.506" alpha="0.28" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="cn-034"/>
+                                                    <constraint firstAttribute="height" constant="200" id="cn-035"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Мартин Иден" translatesAutoresizingMaskIntoConstraints="NO" id="DPOSTER">
+                                                <rect key="frame" x="130" y="0" width="140" height="210"/>
+                                                <constraints>
+                                                    <constraint firstItem="DPOSTER" firstAttribute="width" secondItem="DPOSTER" secondAttribute="height" multiplier="2:3" id="cn-033"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="HALO" firstAttribute="centerX" secondItem="HERO" secondAttribute="centerX" id="cn-036"/>
+                                            <constraint firstItem="HALO" firstAttribute="centerY" secondItem="HERO" secondAttribute="centerY" id="cn-037"/>
+                                            <constraint firstItem="DPOSTER" firstAttribute="centerX" secondItem="HERO" secondAttribute="centerX" id="cn-038"/>
+                                            <constraint firstItem="DPOSTER" firstAttribute="top" secondItem="HERO" secondAttribute="top" id="cn-039"/>
+                                            <constraint firstItem="HERO" firstAttribute="bottom" secondItem="DPOSTER" secondAttribute="bottom" id="cn-040"/>
+                                            <constraint firstAttribute="height" constant="210" id="cn-041"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мартин Иден" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTITLE">
+                                        <rect key="frame" x="0" y="222" width="361" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PROW">
+                                        <rect key="frame" x="0" y="261" width="361" height="31"/>
+                                        <subviews>
+                                            <view clipsSubviews="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="PILL">
+                                                <rect key="frame" x="0" y="0" width="128" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Джек Лондон • 1909" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSUB">
+                                                        <rect key="frame" x="14" y="7" width="100" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                        <color key="textColor" red="1.0" green="0.239" blue="0.506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1.0" green="0.239" blue="0.506" alpha="0.2" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="DSUB" firstAttribute="leading" secondItem="PILL" secondAttribute="leading" constant="14" id="cn-042"/>
+                                                    <constraint firstItem="PILL" firstAttribute="trailing" secondItem="DSUB" secondAttribute="trailing" constant="14" id="cn-043"/>
+                                                    <constraint firstItem="DSUB" firstAttribute="top" secondItem="PILL" secondAttribute="top" constant="7" id="cn-044"/>
+                                                    <constraint firstItem="PILL" firstAttribute="bottom" secondItem="DSUB" secondAttribute="bottom" constant="7" id="cn-045"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="PSPACER">
+                                                <rect key="frame" x="138" y="0" width="223" height="31"/>
+                                                <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="RROW">
+                                        <rect key="frame" x="0" y="304" width="361" height="22"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ST1">
+                                                <rect key="frame" x="0" y="0" width="22" height="22"/>
+                                                <color key="tintColor" red="1.0" green="0.72" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="cn-046"/>
+                                                    <constraint firstAttribute="height" constant="22" id="cn-047"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ST2">
+                                                <rect key="frame" x="26" y="0" width="22" height="22"/>
+                                                <color key="tintColor" red="1.0" green="0.72" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="cn-048"/>
+                                                    <constraint firstAttribute="height" constant="22" id="cn-049"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ST3">
+                                                <rect key="frame" x="52" y="0" width="22" height="22"/>
+                                                <color key="tintColor" red="1.0" green="0.72" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="cn-050"/>
+                                                    <constraint firstAttribute="height" constant="22" id="cn-051"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ST4">
+                                                <rect key="frame" x="78" y="0" width="22" height="22"/>
+                                                <color key="tintColor" red="1.0" green="0.72" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="cn-052"/>
+                                                    <constraint firstAttribute="height" constant="22" id="cn-053"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ST5">
+                                                <rect key="frame" x="104" y="0" width="22" height="22"/>
+                                                <color key="tintColor" red="1.0" green="0.72" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="cn-054"/>
+                                                    <constraint firstAttribute="height" constant="22" id="cn-055"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 / 5" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRATE">
+                                                <rect key="frame" x="134" y="0" width="60" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="0.65" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clipsSubviews="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="RSPACER">
+                                                <rect key="frame" x="200" y="0" width="161" height="22"/>
+                                                <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCARD">
+                                        <rect key="frame" x="0" y="338" width="361" height="204"/>
+                                        <subviews>
+                                            <view clipsSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGLOW">
+                                                <rect key="frame" x="230" y="-50" width="130" height="130"/>
+                                                <color key="backgroundColor" red="1.0" green="0.239" blue="0.506" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="cn-056"/>
+                                                    <constraint firstAttribute="height" constant="130" id="cn-057"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="65"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDESC">
+                                                <rect key="frame" x="18" y="18" width="325" height="168"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="0.88" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.08" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DGLOW" firstAttribute="trailing" secondItem="DCARD" secondAttribute="trailing" constant="40" id="cn-058"/>
+                                            <constraint firstItem="DGLOW" firstAttribute="top" secondItem="DCARD" secondAttribute="top" constant="-50" id="cn-059"/>
+                                            <constraint firstItem="DDESC" firstAttribute="top" secondItem="DCARD" secondAttribute="top" constant="18" id="cn-060"/>
+                                            <constraint firstItem="DDESC" firstAttribute="leading" secondItem="DCARD" secondAttribute="leading" constant="18" id="cn-061"/>
+                                            <constraint firstItem="DCARD" firstAttribute="trailing" secondItem="DDESC" secondAttribute="trailing" constant="18" id="cn-062"/>
+                                            <constraint firstItem="DCARD" firstAttribute="bottom" secondItem="DDESC" secondAttribute="bottom" constant="18" id="cn-063"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DSAFE"/>
+                        <color key="backgroundColor" red="0.039" green="0.039" blue="0.122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DBG" firstAttribute="top" secondItem="DVIEW" secondAttribute="top" id="cn-064"/>
+                            <constraint firstItem="DBG" firstAttribute="leading" secondItem="DVIEW" secondAttribute="leading" id="cn-065"/>
+                            <constraint firstItem="DVIEW" firstAttribute="trailing" secondItem="DBG" secondAttribute="trailing" id="cn-066"/>
+                            <constraint firstItem="DVIEW" firstAttribute="bottom" secondItem="DBG" secondAttribute="bottom" id="cn-067"/>
+                            <constraint firstItem="DSTACK" firstAttribute="top" secondItem="DSAFE" secondAttribute="top" constant="12" id="cn-068"/>
+                            <constraint firstItem="DSTACK" firstAttribute="leading" secondItem="DSAFE" secondAttribute="leading" constant="16" id="cn-069"/>
+                            <constraint firstItem="DSAFE" firstAttribute="trailing" secondItem="DSTACK" secondAttribute="trailing" constant="16" id="cn-070"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="never" id="DNAV"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="DDESC" id="ot-d1"/>
+                        <outlet property="glowView" destination="DGLOW" id="ot-d2"/>
+                        <outlet property="haloView" destination="HALO" id="ot-h1"/>
+                        <outlet property="pillView" destination="PILL" id="ot-d3"/>
+                        <outlet property="posterImageView" destination="DPOSTER" id="ot-d4"/>
+                        <outlet property="ratingValueLabel" destination="DRATE" id="ot-d5"/>
+                        <outletCollection property="starImageViews" destination="ST1" collectionClass="NSMutableArray" id="oc-1"/>
+                        <outletCollection property="starImageViews" destination="ST2" collectionClass="NSMutableArray" id="oc-2"/>
+                        <outletCollection property="starImageViews" destination="ST3" collectionClass="NSMutableArray" id="oc-3"/>
+                        <outletCollection property="starImageViews" destination="ST4" collectionClass="NSMutableArray" id="oc-4"/>
+                        <outletCollection property="starImageViews" destination="ST5" collectionClass="NSMutableArray" id="oc-5"/>
+                        <outlet property="subtitleLabel" destination="DSUB" id="ot-d6"/>
+                        <outlet property="titleLabel" destination="DTITLE" id="ot-d7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr-detail" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Мартин Иден" width="400" height="600"/>
+        <image name="bg_list" width="780" height="1688"/>
+        <image name="bg_detail" width="780" height="1688"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+    </resources>
+</document>
